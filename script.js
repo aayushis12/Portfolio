@@ -71,11 +71,31 @@ $("#about").on('click',function(){
   $(".wrapper").hide();
   $(".about-wrapper").show();
 })
-$("#back-arrow").on('click',function(){
+$("#back-arrow-about").on('click',function(){
   $(".wrapper").show();
   $(this).parents('div').hide();
 })
 $("#experience").on('click',function(){
   $(".wrapper").hide();
   $(".exp-wrapper").show();
+})
+
+$("#more").on('click',function(){
+  $(".wrapper").hide();
+  $(".more-wrapper").show();
+})
+
+$("#back-arrow-exp").on('click',function(){
+  $(".wrapper").show();
+  $(this).parents('div').hide();
+})
+
+$("#back-arrow-more").on('click',function(){
+  $(".more-wrapper").hide();
+  $(".wrapper").show();
+})
+
+$("#contact").on('click',function(){
+  $(".contact-wrapper").show();
+  $(".wrapper").hide();
 })

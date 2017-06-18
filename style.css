@@ -36,6 +36,7 @@ header {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   z-index: 10;
   line-height: 2em
+
 }
 
 header a {
@@ -331,12 +332,56 @@ figcaption a {
   border:1px solid grey;
   background-color:gray;
 }
-.back{
+.about-back{
   position:absolute;
-  bottom:12%;
+  bottom: 12%;
   left:5%;
+}
+.exp-wrapper{
+  position: relative;
 }
 
 .parallax{
   background-image: url("images/Experience.jpg");
+  min-height:50vh;
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.exp-text{
+  height:90vh;
+  position:absolute;
+  top:114%;
+  left:4%;
+}
+.exp-back{
+  position: absolute;
+  top:265%;
+  left: 5%;
+}
+.more-wrapper{
+  position: relative;
+}
+.more-text{
+  position: absolute;
+  left:4%;
+}
+.more-text p{
+
+}
+.more-wrapper{
+  position:relative;
+}
+.more-back{
+  position:absolute;
+  left:4%;
+  top:620%;
+}
+.contact-wrapper{
+  position: relative;
+}
+.contact-wrapper p{
+  position: absolute;
+  left:35%;
 }
