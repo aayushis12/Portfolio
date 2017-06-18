@@ -106,3 +106,12 @@ $("#contact").on('click',function(){
   $(".wrapper").hide();
    $(".contact-wrapper").hide();
 })
+
+$("#projects").on('click',function(){
+  $(".wrapper").hide();
+  $(".contact-wrapper").hide();
+  $(".project-wrapper").show();
+})
+$(".well").mouseover(function(){
+  $(this).toggleClass('flipped');
+})

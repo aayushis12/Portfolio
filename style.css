@@ -408,7 +408,11 @@ header p{
 }
 .contact-wrapper p{
   position: absolute;
-  left:35%;
+  left:34%;
+  font-family: 'Rokkitt',sans-serif;
+}
+.contact-wrapper>p span{
+  color:#C4290D;
 }
 h1{
   font-family: 'Bitter',sans-serif;
@@ -423,4 +427,32 @@ h1{
 }
 .more-heading{
   margin-top: 4%;
+}
+.project-wrapper{
+  width:100%;
+  margin-top: 4%;
+}
+.well{
+  width: 100%;
+  height: 40vh;
+  display: flex;
+}
+.left-well img,.right-well img{
+  width:35vw;
+  height:40vh;
+  padding:2% ;
+  margin:2% 12%;
+  border:2px solid white;
+  background-color:white;
+
+}
+.card.active{
+  transform: rotateY(180deg);
+}
+.face{
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
