@@ -35,7 +35,12 @@ header {
   padding: 0 30px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   z-index: 10;
-  line-height: 2em
+  line-height: 2em;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  height:6vh;
 
 }
 
@@ -306,6 +311,9 @@ figcaption a {
     opacity: 1
   }
 }
+header p{
+  font-family: 'Bitter',sans-serif;
+}
 .about-wrapper{
   overflow-x: hidden;
   overflow-y: hidden;
@@ -314,27 +322,34 @@ figcaption a {
 .image img{
   width: 30vw;
   height: 50vh;
+  border:2px solid rgba(0,0,0,0.3);
   border-radius: 50%;
+  margin-top:2%;
 }
 .image{
   position:relative;
-  left:30%;
+  left:33%;
   top:4%;
 }
 .text{
-  color:red;
+ border:2px solid rgba(0,0,0,0.2);
+ box-shadow: 0.3em 0.3em rgba(0,0,0,0.2);
+ width:90%;
+ padding:1%;
+ height:auto;
   position:absolute;
-  top:60%;
-  left:3%;
+  top:64%;
+  left:4%;
+  font-family:'Rokkitt',sans-serif;
 }
 .minor{
-  color:blue;
-  border:1px solid grey;
-  background-color:gray;
+ color:#C4290D;
+  font-weight:bold;
+  
 }
 .about-back{
   position:absolute;
-  bottom: 12%;
+  bottom: 4%;
   left:5%;
 }
 .exp-wrapper{
@@ -354,10 +369,12 @@ figcaption a {
   position:absolute;
   top:114%;
   left:4%;
+  font-family:'Rokkitt','sans-serif';
+  
 }
 .exp-back{
   position: absolute;
-  top:265%;
+  top:285%;
   left: 5%;
 }
 .more-wrapper{
@@ -366,17 +383,25 @@ figcaption a {
 .more-text{
   position: absolute;
   left:4%;
+  border:2px solid rgba(0,0,0,0.2);
+  box-shadow: 0.3em 0.3em rgba(0,0,0,0.2);
+  width:90%;
+  padding:2%;
+  font-family:'Rokkitt',sans-serif;
+
+ 
 }
 .more-text p{
 
 }
 .more-wrapper{
   position:relative;
+  height:auto;
 }
 .more-back{
   position:absolute;
   left:4%;
-  top:620%;
+  top:1000%;
 }
 .contact-wrapper{
   position: relative;
@@ -384,4 +409,18 @@ figcaption a {
 .contact-wrapper p{
   position: absolute;
   left:35%;
+}
+h1{
+  font-family: 'Bitter',sans-serif;
+}
+.sub-text{
+  border: 2px solid rgba(0,0,0,0.2);
+  box-shadow: 0.3em 0.3em rgba(0,0,0,0.2);
+  width:110%;
+  padding:1%;
+  left:3%;
+  height:auto;
+}
+.more-heading{
+  margin-top: 4%;
 }
