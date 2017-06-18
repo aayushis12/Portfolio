@@ -99,3 +99,4 @@ $("#contact").on('click',function(){
   $(".contact-wrapper").show();
   $(".wrapper").hide();
 })
+
