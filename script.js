@@ -112,6 +112,12 @@ $("#projects").on('click',function(){
   $(".contact-wrapper").hide();
   $(".project-wrapper").show();
 })
+$("#back-arrow-project").on('click',function(){
+  $(".project-wrapper").hide();
+  $(".wrapper").show();
+  $(".contact-wrapper").show();
+})
+
 $(".well").mouseover(function(){
   $(this).toggleClass('flipped');
 })
