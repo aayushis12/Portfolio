@@ -115,3 +115,7 @@ $("#projects").on('click',function(){
 $(".well").mouseover(function(){
   $(this).toggleClass('flipped');
 })
+
+$('.f1_container').click(function() {
+    $(this).toggleClass('active');
+});
