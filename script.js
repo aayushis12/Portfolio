@@ -1,3 +1,4 @@
+$(document).ready(function(){
 
 //checks if element it is called on is visible (only checks horizontally
 (function($) {
@@ -68,53 +69,39 @@
 
 $("#about").on('click',function(){
   //alert("hello");
-  $(".wrapper").hide();
+  $('.showonClick:not("#about-wrapper")').hide();
   $(".contact-wrapper").hide();
   $(".about-wrapper").show();
 })
-$("#back-arrow-about").on('click',function(){
-  $(".wrapper").show();
-  $(".contact-wrapper").show();
-  $(this).parents('div').hide();
-})
+
 $("#experience").on('click',function(){
-  $(".wrapper").hide();
+  $('.showonClick:not("#exp-wrapper")').hide();
    $(".contact-wrapper").hide();
   $(".exp-wrapper").show();
 })
 
 $("#more").on('click',function(){
-  $(".wrapper").hide();
+  $('.showonClick:not("#more-wrapper")').hide();
    $(".contact-wrapper").hide();
   $(".more-wrapper").show();
 })
 
-$("#back-arrow-exp").on('click',function(){
-  $(".wrapper").show();
-   $(".contact-wrapper").show();
-  $(this).parents('div').hide();
-})
-
-$("#back-arrow-more").on('click',function(){
-  $(".more-wrapper").hide();
-  $(".wrapper").show();
-  $(".contact-wrapper").show();
-})
 
 $("#contact").on('click',function(){
   $(".contact-wrapper").show();
-  $(".wrapper").hide();
+  
    $(".contact-wrapper").hide();
 })
 
 $("#projects").on('click',function(){
-  $(".wrapper").hide();
+  $('.showonClick:not("#project-wrapper")').hide();
   $(".contact-wrapper").hide();
   $(".project-wrapper").show();
 })
-$("#back-arrow-project").on('click',function(){
-  $(".project-wrapper").hide();
-  $(".wrapper").show();
+
+$("#thank").on('click',function(){
+  $('.showonClick:not("#contact-wrapper")').hide();
+  
   $(".contact-wrapper").show();
 })
 
@@ -125,3 +112,5 @@ $(".well").mouseover(function(){
 $('.f1_container').click(function() {
     $(this).toggleClass('active');
 });
+
+})
